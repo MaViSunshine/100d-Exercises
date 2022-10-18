@@ -1,0 +1,156 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Blaka&family=Blaka+Hollow&family=DotGothic16&family=Moo+Lah+Lah&family=Rampart+One&family=Roboto:wght@100;300;400;500;700;900&family=Rubik+Bubbles&family=Rubik+Glitch&family=Rubik+Microbe&family=Rubik+Moonrocks&family=Rubik+Puddles&family=Rubik+Wet+Paint&family=Stick&family=Tourney:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,500;1,600;1,700&family=Train+One&family=Yuji+Mai&display=swap'); */
+
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+    /* font-family: 'Anton', sans-serif;
+    font-family: 'Blaka', cursive;
+    font-family: 'Blaka Hollow', cursive;
+    font-family: 'DotGothic16', sans-serif;
+    font-family: 'Moo Lah Lah', cursive;
+    font-family: 'Rampart One', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik Bubbles', cursive;
+    font-family: 'Rubik Glitch', cursive;
+    font-family: 'Rubik Microbe', cursive;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-family: 'Rubik Puddles', cursive;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-family: 'Stick', sans-serif;
+    font-family: 'Tourney', cursive;
+    font-family: 'Train One', cursive;
+    font-family: 'Yuji Mai', serif; */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    border: 2px solid blueviolet;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer button {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.header,
+.footer {
+    width: 100%;
+    height: 10%;
+}
+
+.section {
+    width: 100%;
+    height: 60%;
+}
+
+.section .container {
+    justify-content: space-around;
+    border: 0;
+}
+
+.section .box {
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .box .suitcase,
+.section .box .cat1,
+.section .box .cat2 {
+    width: 80%;
+    height: 70%;
+    /* border: 2px solid burlywood; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outerbox {
+    border: 2px solid aquamarine;
+    height: 50%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section .box h3 {
+    width: 80%;
+    border-bottom: 4px solid goldenrod;
+    line-height: 50px;
+}
+
+.outerbox .innerbox {
+    /* border: 2px solid lawngreen; */
+    height: 40%;
+    width: 40%;
+    background: firebrick;
+}
+
+.cat1 .innerbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat1 .innerbox > * {
+    color: #fff;
+}
+
+.innerbox img {
+    height: auto;
+    width: 100%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.box.hide {
+    display: none;
+}
