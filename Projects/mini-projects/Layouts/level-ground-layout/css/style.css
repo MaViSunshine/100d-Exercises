@@ -1,0 +1,213 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+:root {
+  --font: "Roboto", Arial, Helvetica, sans-serif;
+  --main-grey: rgb(99, 116, 136);
+  --main-lightgrey: rgb(214, 218, 222);
+  --main-darkgrey: rgb(22, 29, 37);
+  --main-white: rgb(255, 255, 255);
+}
+body {
+  /* border: 2px solid lightblue; */
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* header portion */
+header {
+  background-color: var(--main-grey);
+  color: var(--main-white);
+  height: 50px;
+}
+header nav * {
+  float: left;
+  width: 20%;
+}
+nav li a {
+  color: var(--main-white);
+}
+nav > a {
+  background-color: var(--main-white);
+  color: var(--main-grey);
+  border-radius: 10%;
+  padding: 1%;
+}
+
+/* main portion */
+main {
+  background-color: var(--main-grey);
+  color: white;
+  height: 400px;
+  text-align: center;
+}
+main h1 {
+  margin: 0 auto;
+  padding: 2%;
+}
+main p {
+  margin: 0 auto;
+  padding: 0 25% 5% 25%;
+}
+span {
+  float: left;
+  width: 100%;
+}
+span.main-video {
+  padding-bottom: 12%;
+}
+
+section.why {
+  background-color: var(--main-white);
+  color: var(--main-darkgrey);
+  height: 300px;
+  text-align: center;
+}
+section.why h2 {
+  margin: 0 auto;
+  padding-top: 5%;
+}
+section.why p {
+  margin: 0 auto;
+  padding: 10px 400px 5% 400px;
+}
+
+/* section 2 portion */
+.visit-gym,
+.visit-personal {
+  float: left;
+  width: 50%;
+  background-color: var(--main-lightgrey);
+  color: var(--main-darkgrey);
+  height: 550px;
+  text-align: center;
+}
+section.visit img {
+  background-color: var(--main-grey);
+  height: 200px;
+  width: 350px;
+  margin-top: 50px;
+}
+section.visit p {
+  padding: 5px 50px;
+  margin-bottom: 40px;
+}
+section.visit a {
+  color: var(--main-darkgrey);
+  border: 1px solid var(--main-darkgrey);
+  border-radius: 5%;
+  padding: 10px 30px;
+}
+
+/* section 3 portion */
+section.volunteer {
+  background-color: var(--main-white);
+  color: var(--main-darkgrey);
+  text-align: center;
+  height: 300px;
+  clear: both;
+}
+section.volunteer h2 {
+  margin: 0 auto;
+  padding-top: 5%;
+}
+section.volunteer p {
+  margin: 0 auto;
+  padding: 10px 400px 5% 400px;
+}
+section.volunteer a {
+  color: var(--main-darkgrey);
+  border: 1px solid var(--main-darkgrey);
+  border-radius: 5%;
+  padding: 10px 30px;
+}
+
+/* footer portion  */
+footer {
+  background-color: var(--main-darkgrey);
+  height: 250px;
+  color: var(--main-white);
+}
+footer section {
+  float: left;
+  width: 48%;
+  margin-bottom: 15px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+footer section.footer-links {
+  padding-right: 20%;
+}
+footer section.footer-info * {
+  padding-left: 20%;
+  float: right;
+}
+footer section.footer-info span {
+  padding-left: 60%;
+}
+footer section ul.icons li {
+  float: left;
+  width: 33%;
+}
+footer section ul li {
+  float: left;
+  width: 50%;
+}
+footer h6 {
+  clear: both;
+  color: var(--main-grey);
+}
+footer h5 {
+  color: var(--main-white);
+  margin: 0 auto;
+}
+footer section.footer-info p {
+  color: var(--main-lightgrey);
+  margin: 0 auto;
+}
+footer > p {
+  clear: both;
+  border-top: 1px solid var(--main-lightgrey);
+  padding-top: 20px;
+  margin: 0 20px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width: 600px) {
+  section {
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  section {
+  }
+  . {
+    display: none;
+  }
+}
